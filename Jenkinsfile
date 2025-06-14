@@ -22,8 +22,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                // Configure Go project's repositories
-                jf 'go-config --repo-resolve=devops-class-go --repo-deploy=devops-class-go-local'
 
                 // Build the project with go and resolve the project dependencies from Artifactory
                 jf 'go build --build-name=hello --build-number=1 hello.go'

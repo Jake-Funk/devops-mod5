@@ -1,0 +1,8 @@
+version: 1
+type: go
+resolver:
+    repo: devops-class-go
+    serverId: rt-server
+deployer:
+    repo: devops-class-go-local
+    serverId: rt-server
