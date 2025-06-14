@@ -27,7 +27,7 @@ pipeline {
                 jf 'go build --build-name=hello --build-number=1 hello.go'
 
                 // Publish version v1.0.0 of the package to the go-local repository in Artifactory
-                jf 'go-publish v1.0.0 --build-name=hello --build-number=1'
+                jf 'go-publish v1.1.0 --build-name=hello --build-number=1'
             }
         }
     }
